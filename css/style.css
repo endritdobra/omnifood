@@ -466,7 +466,7 @@
 /********************************/
 
 .section-cta {
-    padding: 9.6rem 0;
+    padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -479,7 +479,6 @@
     background-image: linear-gradient(to right bottom, #e67e22, #eb984e);
     overflow: hidden;
 
-    height: 50rem;
 }
 
 .cta-text-box {
@@ -490,15 +489,133 @@
 .cta-text {
     font-size: 1.8rem;
     line-height: 1.8;
+    margin-bottom: 4.8rem;
 }
 
 .cta .heading-secondary {
-    color: #45260a;
+    /*color: #45260a;*/
+    color: inherit;
     margin-bottom: 3.2rem;
 }
 
 .cta-img-box {
-    background-image:linear-gradient(to right bottom, rgba(235, 152, 78, 0.3), rgba(230, 126, 34, 0.3)), url("../img/eating.jpg");
+    background-image: linear-gradient(to right bottom, rgba(235, 152, 78, 0.3), rgba(230, 126, 34, 0.3)), url("../img/eating.jpg");
     background-size: cover;
     background-position: center;
 }
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+    color: #aaa;
+}
+
+.cta *:focus {
+    outline: none;
+    /*outline: 4px dotted #e67e22;*/
+    /*outline-offset: 8px;*/
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/********************************/
+/* Footer SECTION */
+/********************************/
+
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.grid-footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: #767676;
+    margin-top: auto;
+}
+
+.footer-heading {
+    font-size: 1.89rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem
+}
+
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
+}
+
